@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import * as serviceWorker from './serviceWorker';
 
 //CSS
-import './index.css';
-
-import * as serviceWorker from './serviceWorker';
+import './index.scss';
+import 'semantic-ui-css/semantic.min.css'
 
 //頁
 import { BrowserRouter as Router, Route ,Switch} from "react-router-dom";  //SPA用
@@ -20,6 +20,7 @@ ReactDOM.render(
           <Route exact path="/" component={TopPage}></Route>
           {/* ログイン画面 */}
           <Route path="/profile" component={ProfilePage}></Route>
+          {/* 指定外頁 */}
           <Route component={FailPage} />
         </Switch>
       </Router>
