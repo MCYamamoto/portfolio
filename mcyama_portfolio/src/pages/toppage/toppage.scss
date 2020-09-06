@@ -1,4 +1,89 @@
-.toppage-image {
-    width: 400px;
-    height: auto;  /* ←縦横比を維持する高さを自動計算 */
+@import "./../../com_css/base.scss";
+
+$fontSize:16px;
+$li_height:26px;
+
+header{  
+    //背景画像
+    background-image: url("../../image/toppageimage.jpg");
+    background-size: cover;    
+    
+    .header{
+        &__wrapper{
+            // text-align:center;
+            display: block;
+            ul {
+                font-size: $fontSize;
+                list-style: none;     //点無くし
+                padding-left: 0px;    //ul左端寄せ
+                color: white;       //文字は白    
+                display: inline-block;
+                li{
+                    //左揃え
+                    position: relative;
+                    text-align:left;
+                    //高さはフォントサイズで調整
+                    height: $li_height;
+                }
+            }
+            &__ul{
+                &__li{
+                    &--li1{
+                        left:5%;
+                    }
+                    &--li2{
+                        left:20%;
+                    }
+                    &--li3{
+                        left:60%;
+                    }
+                }
+            }
+        }
+        &__nav{
+            display:flex;
+            list-style: none;     //点無くし
+            color: white;       //文字は白    
+            justify-content: space-around;
+            li{
+                border:solid;
+                padding:20px 0px;
+            }    
+        }
+    }
+}
+
+@media screen and (min-width: 481px) {
+    $fontSize:26px;
+    $li_height:36px;
+    header{
+        .header
+        {
+            &__wrapper{
+                ul{
+                    font-size: $fontSize;
+                    li{
+                        height: $li_height;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    $fontSize:46px;
+    $li_height:56px;
+    header{
+        .header{
+            &__wrapper{
+                ul{
+                    font-size: $fontSize;
+                    li{
+                        height: $li_height;
+                    }
+                }
+            }
+        }
+    }    
 }
