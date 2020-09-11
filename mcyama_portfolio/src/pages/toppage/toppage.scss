@@ -40,17 +40,33 @@ header{
                 }
             }
         }
-        &__nav{
-            display:flex;
-            list-style: none;     //点無くし
-            color: white;       //文字は白    
-            justify-content: space-around;
-            li{
-                border:solid;
-                padding:20px 0px;
-            }    
-        }
     }
+}
+
+.main__section__wrapper
+{
+    display: grid;
+    gap:10px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 0.2fr));
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.main__sectoin__item
+{    
+
+    img{
+        transition: width 1s 0s;
+    
+        width:200px;
+    }
+
+    :hover {
+        width:0px;
+        // opacity: 0;
+    }
+
 }
 
 @media screen and (min-width: 481px) {
