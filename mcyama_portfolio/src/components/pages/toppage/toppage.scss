@@ -1,11 +1,11 @@
-@import "./../../com_css/base.scss";
+@import "./../../../base.scss";
 
 $fontSize:16px;
 $li_height:26px;
 
 header{  
     //背景画像
-    background-image: url("../../image/toppageimage.jpg");
+    background-image: url("../../../image/toppageimage.jpg");
     background-size: cover;    
     
     .header{
@@ -57,14 +57,14 @@ header{
 {    
 
     img{
-        // transition: width 1s 0s;
+        transition: width 1s 0s;
     
         width:200px;
     }
 
     :hover {
-        width:0px;
-        // opacity: 0;
+        // width:0px;
+        opacity: 0.5;
     }
 
 }

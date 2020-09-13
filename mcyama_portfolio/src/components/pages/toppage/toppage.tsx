@@ -5,12 +5,12 @@ import React, {FC} from 'react';
 import {Link} from 'react-router-dom';
 
 //オリジナルコンポーネンツ
-import ComHeader from './../../com_component/com_header'
+import ComHeader from '../../templates/com_header'
 
 //画像
-import ProfileImg from './../../image/Profile.jpg'  //プロフィールボタン画像
-import SkillImg from './../../image/Skill.jpg'      //スキルボタン画像
-import ContactImg from './../../image/Contact.jpg'  //コンタクトボタン画像
+import ProfileImg from './../../../image/Profile.jpg'  //プロフィールボタン画像
+import SkillImg from './../../../image/Skill.jpg'      //スキルボタン画像
+import ContactImg from './../../../image/Contact.jpg'  //コンタクトボタン画像
 
 //CSS
 import "./toppage.scss";

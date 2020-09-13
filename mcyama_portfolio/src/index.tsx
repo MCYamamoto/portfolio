@@ -8,9 +8,9 @@ import 'semantic-ui-css/semantic.min.css'
 
 //頁
 import { BrowserRouter as Router, Route ,Switch} from "react-router-dom";  //SPA用
-import TopPage from './pages/toppage/toppage';
-import ProfilePage from './pages/profile/profile';
-import FailPage from './pages/failpage/failpage';
+import TopPage from './components/pages/toppage/toppage';
+import ProfilePage from './components/pages/profile/profile';
+import FailPage from './components/pages/failpage/failpage';
 
 ReactDOM.render(
   <React.StrictMode>
